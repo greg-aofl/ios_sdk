@@ -66,7 +66,7 @@ NSString * const ADJDataResidencyEU = @"DataResidencyEU";
 static Adjust *defaultInstance = nil;
 static dispatch_once_t onceToken = 0;
 
-+ (id)getInstance {
++ (instancetype)getInstance {
     dispatch_once(&onceToken, ^{
         defaultInstance = [[self alloc] init];
     });
@@ -74,7 +74,7 @@ static dispatch_once_t onceToken = 0;
     return defaultInstance;
 }
 
-- (id)init {
+- (instancetype)init {
     self = [super init];
 
     if (self == nil) {

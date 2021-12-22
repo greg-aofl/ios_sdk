@@ -297,7 +297,7 @@ extern NSString * __nonnull const ADJDataResidencyEU;
 /**
  * Obtain singleton Adjust object.
  */
-+ (nullable id)getInstance;
++ (nullable instancetype)getInstance;
 
 + (void)setTestOptions:(nullable AdjustTestOptions *)testOptions;
 
